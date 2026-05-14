@@ -1,0 +1,26 @@
+# Proxy Server Settings
+# Lines starting with '#' are comments
+
+# Port the proxy server listens on
+listen_port=8080
+
+# Address to bind to (0.0.0.0 = all interfaces, 127.0.0.1 = localhost only)
+listen_address=0.0.0.0
+
+# Maximum number of concurrent client connections
+max_threads=100
+
+# Receive/send buffer size in bytes
+buffer_size=65536
+
+# Connection timeout in seconds (for upstream connections)
+connect_timeout=10
+
+# Receive timeout in seconds
+recv_timeout=30
+
+# Enable logging (1 = on, 0 = off)
+logging=1
+
+# Log file path (empty = stdout only)
+log_file=proxy.log
